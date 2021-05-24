@@ -24,10 +24,45 @@ body {
 .back {
   height: 100vh;
   background-color: var(--clr-white);
-  background-image: url(images\bg-pattern-top-desktop.svg),
-    url(images\bg-pattern-bottom-desktop.svg);
+  background-image: url(../images/bg-pattern-top-desktop.svg),
+    url(../images/bg-pattern-bottom-desktop.svg);
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+}
+
+.flex-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .greeting {
+  background-color: transparent;
   color: var(--clr-magenta);
+  width: 30rem;
+  margin-right: 10em;
+  margin-top: 10em;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.ratings {
+  background-color: yellow;
+}
+
+.users {
+  display: flex;
+  gap: 2.5rem;
+  color: var(--clr-lt-gray);
+}
+
+.user {
+  background-color: var(--clr-magenta);
+  width: 25rem;
+}
+
+.verify {
+  color: var(--clr-pink);
 }
