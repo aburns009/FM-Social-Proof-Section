@@ -34,28 +34,58 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 7em;
 }
 
 .greeting {
   background-color: transparent;
   color: var(--clr-magenta);
   width: 30rem;
-  margin-right: 10em;
-  margin-top: 10em;
+  margin-right: 8em;
+  margin-top: 5em;
 }
 
 h1 {
   font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.intro {
+  margin-top: 0.8em;
+  color: var(--clr-dk-gray);
+  font-weight: 500;
 }
 
 .ratings {
-  background-color: yellow;
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-top: 7.5em;
+}
+
+.rating {
+  color: var(--clr-magenta);
+  background-color: var(--clr-lt-gray);
+  margin-top: 1em;
+  padding: 1em;
+}
+
+.rating::before {
+  content: '';
+  width: 5rem;
+  height: 1rem;
+  display: inline-block;
+  background-image: url(../images/icon-star.svg);
+  background-position: center center;
+  background-size: contain;
 }
 
 .users {
   display: flex;
+  justify-content: center;
   gap: 2.5rem;
   color: var(--clr-lt-gray);
+  margin-top: 5em;
+  font-size: 0.8rem;
 }
 
 .user {
@@ -65,4 +95,5 @@ h1 {
 
 .verify {
   color: var(--clr-pink);
+  font-size: ;
 }
